@@ -30,7 +30,7 @@ public class SellerDaoJDBC implements SellerDao {
 		ResultSet rs = null;
 		try {
 			st = conn.prepareStatement(
-					"Insert INTO seller "
+					"INSERT INTO seller "
 					+ " (Name, Email, BirthDate, BaseSalary, DepartmentId)"
 					+ "VALUES "
 					+ "(?, ?, ?, ?, ?)",
